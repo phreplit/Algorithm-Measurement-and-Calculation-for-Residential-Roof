@@ -93,7 +93,7 @@ int main() { // main function
 			printf("\n");
 			printf("\nPress enter to return to the menu... \n");
 			scanf_s("q\n");
-			system("Cls"); // limpa tela windows
+			system("Cls"); // clear windows screen
 		}
 	}
 	return 0;
