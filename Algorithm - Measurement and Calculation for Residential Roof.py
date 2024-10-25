@@ -1,6 +1,4 @@
 
-
-
 '''  Author: PHNO - Technologist | Postgraduate
      Release Date: 25/10/2024
      Version: 1.0.1v
@@ -116,9 +114,9 @@ while op != -1:
    print('To calculate the Quantity of Tiles per Square Meter: Taking as an example an American tile with dimensions (43Lx26W) in centimeters in horizontal axis view,')
    print(' and knowing that calculating a square meter of a roof will be L x W then 1 Square Meter = 12 tiles, so a square meter has 12 tiles so this will be the standard measurement. 12 x so many square meters = the amount of tiles per square meter.')
    print('')
-   print('To calculate Colonial Tiles : 1 Square Meter = 16 tiles.')
-   print('To calculate Italian Tiles : 1 Square Meter = 14 tiles.')
-   print('To calculate Portuguese Tiles : 1 Square Meter = 17 tiles.')
+   print('To calculate Colonial Tiles: 1 Square Meter = 16 tiles.')
+   print('To calculate Italian Tiles: 1 Square Meter = 14 tiles.')
+   print('To calculate Portuguese Tiles: 1 Square Meter = 17 tiles.')
    print('')
    print('To calculate the Roman Tile: Taking as an example a Roman tile with dimensions (40Lx21W) in centimeters in horizontal axis view, and knowing that calculating a square meter of a roof will be L x W then 1 Square Meter = 16 tiles,')
    print(' so one square meter has 16 tiles, so this will be the standard measurement. 16 x so many square meters = the number of tiles per square meter.')
