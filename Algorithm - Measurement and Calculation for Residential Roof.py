@@ -7,7 +7,7 @@
 
 ''' Algorithm: Measurement and Calculation for Residential Roof, with menu and console compilation. '''
 
-import os system, name # import lib - os clear
+import os # import lib - os clear
 import sys
 import json
 
