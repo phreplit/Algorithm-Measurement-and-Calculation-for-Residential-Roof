@@ -56,8 +56,7 @@ public class Main {
         Scanner scanner1 = new Scanner(System.in);
         System.out.println("\nPress enter to return to the menu...\n");
         String enter = scanner1.nextLine();
-        System.out.print("\033[H\033[2J"); // clear screen
-        System.out.flush(); 
+        clear(); 
         break;
       case 2:
         System.out.println("\nEnter how many square meters the roof has: ");  
@@ -67,8 +66,7 @@ public class Main {
         Scanner scanner2 = new Scanner(System.in);
         System.out.println("\nPress enter to return to the menu...\n");
         String enter2 = scanner2.nextLine();
-        System.out.print("\033[H\033[2J"); // clear screen
-        System.out.flush(); 
+        clear(); 
         break;
       case 3:
         int v6 = 16;
@@ -79,8 +77,7 @@ public class Main {
         Scanner scanner3 = new Scanner(System.in);
         System.out.println("\nPress enter to return to the menu...\n");
         String enter3 = scanner3.nextLine();
-        System.out.print("\033[H\033[2J"); // clear screen
-        System.out.flush(); 
+        clear();
       break;
       case 4:
         int v8 = 14;
@@ -91,8 +88,7 @@ public class Main {
         Scanner scanner4 = new Scanner(System.in);
         System.out.println("\nPress enter to return to the menu...\n");
         String enter4 = scanner4.nextLine();
-        System.out.print("\033[H\033[2J"); // clear screen
-        System.out.flush(); 
+        clear(); 
       break;
       case 5:
         int v10 = 17;
@@ -103,8 +99,7 @@ public class Main {
         Scanner scanner5 = new Scanner(System.in);
         System.out.println("\nPress enter to return to the menu...\n");
         String enter5 = scanner5.nextLine();
-        System.out.print("\033[H\033[2J"); // clear screen
-        System.out.flush(); 
+        clear(); 
       break;
      case 6:
         int v12 = 16;
@@ -115,15 +110,13 @@ public class Main {
         Scanner scanner6 = new Scanner(System.in);
         System.out.println("\nPress enter to return to the menu...\n");
         String enter6 = scanner6.nextLine();
-        System.out.print("\033[H\033[2J"); // clear screen
-        System.out.flush(); 
+        clear();
       break;
       case 7:
         System.out.println("\n Finished Algorithm! ");
       break loop;
       case 8:
-      System.out.print("\033[H\033[2J"); // clear screen
-      System.out.flush(); 
+      clear();
       System.out.println("\n");
       System.out.println("Info");
       System.out.println("");
@@ -146,12 +139,10 @@ public class Main {
       Scanner scanner7 = new Scanner(System.in);
       System.out.println("\nPress enter to return to the menu...\n");
       String enter7 = scanner7.nextLine();
-      System.out.print("\033[H\033[2J"); // clear screen
-      System.out.flush(); 
+      clear();
       break;
       case 9:
-      System.out.print("\033[H\033[2J"); // clear screen
-      System.out.flush(); // clear screen
+      clear();
       System.out.println("\n");
       System.out.println("Algorithm: Measurement and Calculation for Residential Roof");
       System.out.println("");
@@ -164,25 +155,26 @@ public class Main {
       Scanner scanner8 = new Scanner(System.in);
       System.out.println("\nPress enter to return to the menu...\n");
       String enter8 = scanner8.nextLine();
-      System.out.print("\033[H\033[2J"); // clear screen
-      System.out.flush();
+      clear();
       break;
       default:
         Scanner scanner9 = new Scanner(System.in);
         System.out.println("\n Error, choose again. ");
         System.out.println("\nPress enter to return to the menu...\n");
         String enter9 = scanner9.nextLine();
-        System.out.print("\033[H\033[2J"); // clear screen
-        System.out.flush(); 
+        clear();
     }
       } catch (Exception e) {
       Scanner scanner9 = new Scanner(System.in);
       System.out.println("\nError, system failure!");
       System.out.println("\nPress enter to return to the menu...\n");
       String enter9 = scanner9.nextLine();
-      System.out.print("\033[H\033[2J"); // clear screen
-      System.out.flush();
+      clear();
       }            
     }
    }
+      public static void clear() {
+	         System.out.print("\033[H\033[2J"); // clear screen
+	         System.out.flush();
+      }
   }
