@@ -30,7 +30,7 @@ while op != -1:
   print('[8] Info')
   print('[9] About')
   print('')
-  op = int(input('Enter with your choice '))
+  op = int(input('Enter with your choice: '))
   if op == 1:
    print('')
    v1 = int(input('Enter the roof length: '))
