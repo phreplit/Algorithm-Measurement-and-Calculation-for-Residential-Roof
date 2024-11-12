@@ -7,9 +7,12 @@
 
 ''' Algorithm: Measurement and Calculation for Residential Roof, with menu and console compilation. '''
 
-import os # import lib - os clear
+import os system, name # import lib - os clear
 import sys
 import json
+
+def reset_text():
+    os.system('cls' if os.name=='nt' else 'clear')
 
 op = 0 
 while op != -1:
@@ -39,7 +42,7 @@ while op != -1:
    print('')
    print('Press enter to return to the menu...')
    a1 = str(input(''))
-   os.system('clear')
+   reset_text()
   elif op == 2:
    v4 = int(12)
    print('')
@@ -51,7 +54,7 @@ while op != -1:
    print('')
    print('Press enter to return to the menu...')
    a2 = str(input(''))
-   os.system('clear') # clear screen - lib os
+   reset_text() # clear screen - lib os
   elif op == 3:
    v6 = int(16)
    print('')
@@ -63,7 +66,7 @@ while op != -1:
    print('')
    print('Press enter to return to the menu...')
    a2 = str(input(''))
-   os.system('clear') # clear screen - lib os
+   reset_text() # clear screen - lib os
   elif op == 4:
    v8 = int(14)
    print('')
@@ -75,7 +78,7 @@ while op != -1:
    print('')
    print('Press enter to return to the menu...')
    a2 = str(input(''))
-   os.system('clear') # clear screen - lib os
+   reset_text() # clear screen - lib os
   elif op == 5:
    v10 = int(17)
    print('')
@@ -87,7 +90,7 @@ while op != -1:
    print('')
    print('Press enter to return to the menu...')
    a2 = str(input(''))
-   os.system('clear') # clear screen - lib os
+   reset_text() # clear screen - lib os
   elif op == 6:
    v12 = int(16)
    print('')
@@ -99,14 +102,14 @@ while op != -1:
    print('')
    print('Press enter to return to the menu...')
    a2 = str(input(''))
-   os.system('clear') # clear screen - lib os
+   reset_text() # clear screen - lib os
   elif op == 7:
    print('')
    print('Finished Algorithm!')
    print('')
    break
   elif op == 8:
-   os.system('clear')
+   reset_text()
    print('')
    print('Info')
    print('')
@@ -128,9 +131,9 @@ while op != -1:
    print('')
    print('Press enter to return to the menu...')
    a5 = str(input(''))
-   os.system('clear')
+   reset_text()
   elif op == 9:
-   os.system('clear')
+   reset_text()
    print('')
    print('Algorithm: Measurement and Calculation for Residential Roof')
    print('')
@@ -142,11 +145,11 @@ while op != -1:
    print('')
    print('Press enter to return to the menu...')
    a5 = str(input(''))
-   os.system('clear')
+   reset_text()
   else: 
    print('')
    print('Error. Wrong Choice!')
    print('')
    print('Press enter to return to the menu...')
    a6 = str(input(''))
-   os.system('clear')
+   reset_text()
