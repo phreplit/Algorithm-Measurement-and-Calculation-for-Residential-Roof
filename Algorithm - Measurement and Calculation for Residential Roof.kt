@@ -11,7 +11,8 @@ import java.util.Scanner // import lib
 import kotlin.system.exitProcess
 
 fun main(args: Array<String>) {
-
+   
+   do {
    print("\n");
    print(" Measurement and Calculation for Residential Roof \n");
    print("\n");
@@ -43,9 +44,10 @@ fun main(args: Array<String>) {
        print("\n");
        println("Square meters are equivalent to:  " + (result));
        print("\n"); 
-       print("\nPress enter to exit...\n");
-       var enter = readLine()!!.toInt(); 
-       return
+       print("\nPress enter to return menu...\n");
+       var enter = readLine()!!.toInt();
+       reset_process();
+       //return
      }
      2 -> {
        print("\n");
@@ -58,9 +60,10 @@ fun main(args: Array<String>) {
        print("\n");
        println("The quantity of American tiles will be:  " + (result2));
        print("\n");
-       print("\nPress enter to exit...\n");
-       var enter1 = readLine()!!.toInt(); 
-       return
+       print("\nPress enter to return menu...\n");
+       var enter1 = readLine()!!.toInt();
+       reset_process();
+       //return
      }
      3 -> {
        print("\n");
@@ -73,9 +76,10 @@ fun main(args: Array<String>) {
        print("\n");
        println("The quantity of colonial tiles will be:  " + (result3));
        print("\n");
-       print("\nPress enter to exit...\n");
-       var enter2 = readLine()!!.toInt(); 
-       return
+       print("\nPress enter to return menu...\n");
+       var enter2 = readLine()!!.toInt();
+       reset_process();
+       //return
      }
      4 -> {
        print("\n");
@@ -88,9 +92,10 @@ fun main(args: Array<String>) {
        print("\n");
        println("The quantity of Italian tiles will be:  " + (result4));
        print("\n");
-       print("\nPress enter to exit...\n");
-       var enter3 = readLine()!!.toInt(); 
-       return
+       print("\nPress enter to return menu...\n");
+       var enter3 = readLine()!!.toInt();
+       reset_process();
+       //return
      }
      5 -> {
        print("\n");
@@ -103,9 +108,10 @@ fun main(args: Array<String>) {
        print("\n");
        println("The quantity of Portuguese tiles will be:  " + (result4));
        print("\n");
-       print("\nPress enter to exit...\n");
-       var enter4 = readLine()!!.toInt(); 
-       return
+       print("\nPress enter to return menu...\n");
+       var enter4 = readLine()!!.toInt();
+       reset_process();
+       //return
      }
      6 -> {
        print("\n");
@@ -118,20 +124,22 @@ fun main(args: Array<String>) {
        print("\n");
        println("The quantity of Roman tiles will be:  " + (result4));
        print("\n");
-       print("\nPress enter to exit...\n");
-       var enter5 = readLine()!!.toInt(); 
-       return
+       print("\nPress enter to return menu...\n");
+       var enter5 = readLine()!!.toInt();
+       reset_process();
+       //return
      }
      7 -> {
        print("\n");
        println("Finished Algorithm!");
        print("\n");
        print("\nPress enter to exit...\n");
-       var enter6 = readLine()!!.toInt(); 
-       return
+       var enter6 = readLine()!!.toInt();
+       exit_process();
+       //return
      }
      8 -> {
-       exit_process();
+       reset_process();
        print("\n");
        print("Info\n");
        print("\n");
@@ -152,13 +160,13 @@ fun main(args: Array<String>) {
        print("This algorithm was built in Kotlin and by default always requires that its syntax are always correct for its correct compilation in the console.\n");
        print("");
        print("\n");
-       print("\nPress enter to exit...\n");
+       print("\nPress enter to return menu...n");
        var enter7 = readLine()!!.toInt(); 
-       exit_process();
-       return
+       reset_process();
+       //return
      }
      9 -> {
-       exit_process();
+       reset_process();
        print("\n");
        print("Algorithm: Measurement and Calculation for Residential Roof\n");
        print("\n");
@@ -169,21 +177,26 @@ fun main(args: Array<String>) {
        print("E-mail: phreplit@gmail.com\n");
        print("");
        print("\n");
-       print("Press enter to exit...\n");
-       Thread.sleep(3000); 
-       exit_process();
-       exitProcess(0); 
+       print("Press enter to return menu...\n");
+       var enter8 = readLine()!!.toInt();
+       reset_process(); 
      }
      else -> {
          print("\n");
          println("Error, choose again.");
          print("\n");
-         return
+         reset_process();
+         //return
      }
    }
+ } while(op != -1)
+}
+
+fun reset_process(){
+  print("\u001b[H\u001b[2J");
 }
 
 fun exit_process(){
-  print("\u001b[H\u001b[2J");
+  exitProcess(0);
 }
 
