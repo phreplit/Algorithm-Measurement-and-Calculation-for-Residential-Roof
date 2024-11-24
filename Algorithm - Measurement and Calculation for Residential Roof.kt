@@ -45,7 +45,7 @@ fun main(args: Array<String>) {
        println("Square meters are equivalent to:  " + (result));
        print("\n"); 
        print("\nPress enter to return menu...\n");
-       var enter = readLine()!!.toInt();
+       var enter = readLine()!!;
        reset_process();
        //return
      }
@@ -61,7 +61,7 @@ fun main(args: Array<String>) {
        println("The quantity of American tiles will be:  " + (result2));
        print("\n");
        print("\nPress enter to return menu...\n");
-       var enter1 = readLine()!!.toInt();
+       var enter1 = readLine()!!;
        reset_process();
        //return
      }
@@ -77,7 +77,7 @@ fun main(args: Array<String>) {
        println("The quantity of colonial tiles will be:  " + (result3));
        print("\n");
        print("\nPress enter to return menu...\n");
-       var enter2 = readLine()!!.toInt();
+       var enter2 = readLine()!!;
        reset_process();
        //return
      }
@@ -93,7 +93,7 @@ fun main(args: Array<String>) {
        println("The quantity of Italian tiles will be:  " + (result4));
        print("\n");
        print("\nPress enter to return menu...\n");
-       var enter3 = readLine()!!.toInt();
+       var enter3 = readLine()!!;
        reset_process();
        //return
      }
@@ -109,7 +109,7 @@ fun main(args: Array<String>) {
        println("The quantity of Portuguese tiles will be:  " + (result4));
        print("\n");
        print("\nPress enter to return menu...\n");
-       var enter4 = readLine()!!.toInt();
+       var enter4 = readLine()!!;
        reset_process();
        //return
      }
@@ -125,7 +125,7 @@ fun main(args: Array<String>) {
        println("The quantity of Roman tiles will be:  " + (result4));
        print("\n");
        print("\nPress enter to return menu...\n");
-       var enter5 = readLine()!!.toInt();
+       var enter5 = readLine()!!;
        reset_process();
        //return
      }
@@ -134,7 +134,7 @@ fun main(args: Array<String>) {
        println("Finished Algorithm!");
        print("\n");
        print("\nPress enter to exit...\n");
-       var enter6 = readLine()!!.toInt();
+       var enter6 = readLine()!!;
        exit_process();
        //return
      }
@@ -160,8 +160,8 @@ fun main(args: Array<String>) {
        print("This algorithm was built in Kotlin and by default always requires that its syntax are always correct for its correct compilation in the console.\n");
        print("");
        print("\n");
-       print("\nPress enter to return menu...n");
-       var enter7 = readLine()!!.toInt(); 
+       print("\nPress enter to return menu...");
+       var enter7 = readLine()!!; 
        reset_process();
        //return
      }
@@ -178,18 +178,21 @@ fun main(args: Array<String>) {
        print("");
        print("\n");
        print("Press enter to return menu...\n");
-       var enter8 = readLine()!!.toInt();
-       reset_process(); 
+       var enter8 = readLine()!!;
+       reset_process();
+       //return
      }
      else -> {
          print("\n");
          println("Error, choose again.");
          print("\n");
+         print("Press enter to return menu...\n");
+         var enter9 = readLine()!!;
          reset_process();
          //return
      }
    }
- } while(op != -1)
+ } while(op != -1);
 }
 
 fun reset_process(){
@@ -199,4 +202,3 @@ fun reset_process(){
 fun exit_process(){
   exitProcess(0);
 }
-
