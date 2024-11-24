@@ -149,7 +149,7 @@ fun main(args: Array<String>) {
        print("Important information: \n");
        print("");
        print("This algorithm was built with integer variables so it does not accept numbers with commas e.g.: 2.90 meters change to 3 meters.\n");
-       print("This algorithm was built in Java and by default always requires that its syntax are always correct for its correct compilation in the console.\n");
+       print("This algorithm was built in Kotlin and by default always requires that its syntax are always correct for its correct compilation in the console.\n");
        print("");
        print("\n");
        print("\nPress enter to exit...\n");
